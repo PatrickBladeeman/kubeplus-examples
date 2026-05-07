@@ -63,7 +63,7 @@ Steps
 6. Clone or fork the `kubeplus-examples` repo and update both Argo CD
    applications so `repoURL` points to that repo:
 
-   git clone https://github.com/<org>/kubeplus-examples.git
+   git clone https://github.com/cloud-ark/kubeplus-examples.git
 
    Update:
 

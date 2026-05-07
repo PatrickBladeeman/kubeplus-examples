@@ -52,7 +52,7 @@ Suggested flow
 
 6. Clone or fork the `kubeplus-examples` repo:
 
-   git clone https://github.com/PatrickBladeeman/kubeplus-examples.git
+   git clone https://github.com/cloud-ark/kubeplus-examples.git
 
 7. Apply the provider ArgoCD application:
 
@@ -115,7 +115,7 @@ Notes
 -----
 - KubePlus enforces that only a Provider can create a `ResourceComposition`, so the provider ArgoCD app must sync as `kubeplus-saas-provider`.
 - Tenant apps can sync as `kubeplus-saas-consumer`, which can create `GitopsWPService` instances but cannot create `ResourceComposition`.
-- Both ArgoCD applications point at `PatrickBladeeman/kubeplus-examples`, but
+- Both ArgoCD applications point at `cloud-ark/kubeplus-examples`, but
   use different subpaths under `multitenancy/application-hosting/wordpress-argocd/`.
 - The shorter custom kind `GitopsWPService` avoids KubePlus's Helm release-name length limit and allows tenant names like `wp-tenant1`.
 

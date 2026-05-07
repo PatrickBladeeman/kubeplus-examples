@@ -6,7 +6,7 @@ metadata:
 spec:
   project: kubeplus-tenants
   source:
-    repoURL: https://github.com/PatrickBladeeman/kubeplus-examples
+    repoURL: https://github.com/cloud-ark/kubeplus-examples
     targetRevision: main
     path: multitenancy/application-hosting/hello-world-argocd/tenants
   destination:
