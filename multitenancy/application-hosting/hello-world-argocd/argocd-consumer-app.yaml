@@ -4,7 +4,7 @@ metadata:
   name: kubeplus-hello-world-consumer
   namespace: argocd
 spec:
-  project: kubeplus-tenants
+  project: helloworld-tenants
   source:
     repoURL: https://github.com/cloud-ark/kubeplus-examples
     targetRevision: main

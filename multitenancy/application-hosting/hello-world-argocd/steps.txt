@@ -108,6 +108,11 @@ Steps
    git add multitenancy/application-hosting/hello-world-argocd/provider/hello-world-service-composition.yaml
    git commit -m "Test hello world provider Argo CD sync"
    git push
+
+   The hard refresh tells Argo CD to invalidate its cached Git and manifest
+   state so the provider application immediately reconciles the pushed
+   `ResourceComposition` change during this test.
+
    kubectl annotate application kubeplus-hello-world-provider -n argocd argocd.argoproj.io/refresh=hard --overwrite
    kubectl get application kubeplus-hello-world-provider -n argocd
    kubectl get resourcecomposition hello-world-service-composition -n default -o yaml

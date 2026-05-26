@@ -4,7 +4,7 @@ metadata:
   name: kubeplus-hello-world-provider
   namespace: argocd
 spec:
-  project: kubeplus-provider
+  project: helloworld-provider
   source:
     repoURL: https://github.com/cloud-ark/kubeplus-examples
     targetRevision: main
